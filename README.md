@@ -1,4 +1,6 @@
-# Zip CLI Tool
+Community continuation of an unmaintained project
+
+# Zip CLI Tool Continuation
 A simple command-line tool for zipping and unzipping files and directories
 ## Installation
 You will need to add the tool to your PATH first:
@@ -39,18 +41,28 @@ zip-cli-tool -v
 To zip a directory:
 
 ```bash
-zip-cli-tool zip /path/to/directory /path/to/archive.zip
-To unzip an archive:
-bashzip-cli-tool unzip /path/to/archive.zip /path/to/destination
+zip-cli-tool -z /path/to/directory /path/to/archive.zip
 ```
-
+To unzip an archive:
+```bash
+zip-cli-tool -uz /path/to/archive.zip /path/to/destination
+```
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-It was forked from [com.leandoer](https://github.com/Leenocktopus/zip-cli-tool) and continued by dervarex after 6 years of inactivity at the GitHub repository.
 
-## Tested on:
-- Windows ?? by [the original author](https://github.com/Leenocktopus)
-- Archlinux by [dervarex](https://github.com/dervarex)
+This project is a continuation of:
+https://github.com/Leenocktopus/zip-cli-tool
+
+The original project did not include a license
+
+This repository applies a modified MIT License only to changes and additions made in this continuation
+
+Credits to the original author: Leenocktopus
+
+See the LICENSE file for details
+
+## Tested on
+- Windows by [the original author](https://github.com/Leenocktopus)
+- Arch Linux by [dervarex](https://github.com/dervarex)
 
 You can help me by testing it on other platforms and reporting any issues you find!
 

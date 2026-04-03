@@ -1,0 +1,35 @@
+MIT License (Modified)
+
+This project is a continuation and modification of the original project:
+https://github.com/Leenocktopus/zip-cli-tool
+
+Original author:
+Leenocktopus
+
+---
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software (excluding original parts that may not be licensed), to deal
+in the modified portions of the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish, distribute,
+and sublicense.
+
+---
+
+IMPORTANT:
+
+- Parts of this project originate from a repository that did not include an explicit license.
+- Those original parts remain the intellectual property of their respective author.
+- This repository only grants permissions for modifications and additions made by this maintainer.
+
+---
+
+Attribution:
+
+If you use this project, you must give appropriate credit to:
+- The original author (Leenocktopus)
+- This continuation project
+
+---
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
