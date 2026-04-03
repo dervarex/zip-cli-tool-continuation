@@ -1,4 +1,4 @@
-package com.leandoer;
+package com.dervarex;
 
 import java.io.IOException;
 import java.io.InputStream;

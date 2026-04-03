@@ -1,13 +1,14 @@
-package com.leandoer;
+package com.dervarex;
 
 
-import com.leandoer.parserchain.*;
+import com.dervarex.filter.*;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.stream.Collectors;
 
-public class Application {
+public class ZipTool {
+	public static String version = "0.0.4";
 
 	public static void main(String[] args) {
 		CLIContext applicationContext = new CLIContext();
@@ -18,6 +19,10 @@ public class Application {
 		CLIFilter functionFilter = new FunctionFilter(loggingFilter, new ZipService());
 		CLIFilter primaryFilter = new PrimaryFilter(functionFilter);
 		primaryFilter.doSetup(Arrays.stream(args).collect(Collectors.toCollection(LinkedList::new)), applicationContext);
+	}
+
+	public static String getVersion() {
+		return version;
 	}
 
 }

@@ -1,7 +1,7 @@
-package com.leandoer.parserchain;
+package com.dervarex;
 
 
-import com.leandoer.CLIContext;
+import com.dervarex.filter.CLIFilter;
 
 import java.util.Queue;
 

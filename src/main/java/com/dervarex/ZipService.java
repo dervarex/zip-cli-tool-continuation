@@ -1,4 +1,4 @@
-package com.leandoer;
+package com.dervarex;
 
 
 import java.io.*;
@@ -29,13 +29,13 @@ public class ZipService {
 		Path[] paths = normalizePaths(filenames);
 		if (Files.exists(path)) {
 			System.out.println("You are about to override existing archive: " + path);
-			System.out.println("Please, confirm operation: Y/[N]" + path);
+			System.out.println("Please, confirm operation: y/n [" + path + "]");
 			Scanner sc = new Scanner(System.in);
 			if (!sc.nextLine().matches("[Yy]")) {
 				return;
 			}
 		}
-		logger.fine("Creating new archive... " + path.toAbsolutePath());
+		logger.fine("Creating new archive: " + path.toAbsolutePath());
 		try (ZipOutputStream z = new ZipOutputStream(new FileOutputStream(path.toString()))) {
 			addAllFilesToZip(z, path, paths);
 			logger.fine("Archive created: " + path.toAbsolutePath());
@@ -78,7 +78,7 @@ public class ZipService {
 	public void update(String name, String... filenames) {
 		Path path = normalizePath(name);
 		Path[] paths = normalizePaths(filenames);
-		logger.fine("Updating archive... " + path.toAbsolutePath());
+		logger.fine("Updating archive: " + path.toAbsolutePath());
 		modifyEntryList(path, paths, EMPTY);
 	}
 
@@ -93,13 +93,13 @@ public class ZipService {
 		} else if (destination.length == 1) {
 			root = destination[0].resolve(path.getFileName().toString().split("\\.")[0]);
 		} else {
-			throw new RuntimeException("Ambiguous destination for -n (unpack), choose one: " +
+			throw new RuntimeException("Ambiguous destination for -uz (unpack), choose one: " +
 					Arrays.stream(destination)
 							.map(Path::toString)
 							.collect(Collectors.joining(", "))
 			);
 		}
-		logger.fine("Unpacking archive... " + path.toAbsolutePath());
+		logger.fine("Unpacking archive: " + path.toAbsolutePath());
 		try (ZipInputStream z = new ZipInputStream(new FileInputStream(name))) {
 			ZipEntry next;
 			FileOutputStream fos;
@@ -165,7 +165,7 @@ public class ZipService {
 				addAllFilesToZip(zos, path, pathsToAdd);
 				zipFile.close();
 				zos.close();
-				logger.fine("Updating archive...");
+				logger.fine("Updating archive: ");
 				Files.copy(f.toPath(), path, StandardCopyOption.REPLACE_EXISTING);
 			} catch(IOException ex) {
 				throw ex;
@@ -181,7 +181,7 @@ public class ZipService {
 	public void remove(String name, String... filenames) {
 		Path path = normalizePath(name);
 		Path[] paths = Arrays.stream(filenames).map(filename -> Paths.get(filename)).toArray(Path[]::new);
-		logger.fine("Removing files from archive... " + path.toAbsolutePath());
+		logger.fine("Removing files from archive: " + path.toAbsolutePath());
 		modifyEntryList(path, EMPTY, paths);
 	}
 

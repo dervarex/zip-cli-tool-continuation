@@ -1,6 +1,6 @@
-package com.leandoer.parserchain;
+package com.dervarex.filter;
 
-import com.leandoer.CLIContext;
+import com.dervarex.CLIContext;
 
 import java.util.Queue;
 import java.util.logging.Logger;

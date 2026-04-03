@@ -36,7 +36,7 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>com.leandoer.Application</mainClass>
+                <mainClass>com.dervarex.ZipTool</mainClass>
               </manifest>
             </archive>
           </configuration>
