@@ -1,7 +1,7 @@
-package com.dervarex.filter;
+package com.dervarex.ziptool.filter;
 
-import com.dervarex.ZipTool;
-import com.dervarex.CLIContext;
+import com.dervarex.ziptool.ZipTool;
+import com.dervarex.ziptool.CLIContext;
 
 import java.util.Queue;
 import java.util.logging.Logger;

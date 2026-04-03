@@ -1,7 +1,7 @@
-package com.dervarex.filter;
+package com.dervarex.ziptool.filter;
 
-import com.dervarex.CLIContext;
-import com.dervarex.ZipService;
+import com.dervarex.ziptool.CLIContext;
+import com.dervarex.ziptool.ZipService;
 
 import java.util.Queue;
 import java.util.function.BiConsumer;

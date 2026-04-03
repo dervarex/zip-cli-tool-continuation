@@ -1,7 +1,7 @@
-package com.dervarex;
+package com.dervarex.ziptool;
 
 
-import com.dervarex.filter.CLIFilter;
+import com.dervarex.ziptool.filter.CLIFilter;
 
 import java.util.Queue;
 

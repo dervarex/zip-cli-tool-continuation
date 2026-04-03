@@ -1,4 +1,4 @@
-package com.dervarex;
+package com.dervarex.ziptool;
 
 import java.io.IOException;
 import java.io.InputStream;

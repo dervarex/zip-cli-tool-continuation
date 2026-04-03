@@ -1,7 +1,7 @@
-package com.dervarex;
+package com.dervarex.ziptool;
 
 
-import com.dervarex.filter.*;
+import com.dervarex.ziptool.filter.*;
 
 import java.util.Arrays;
 import java.util.LinkedList;
