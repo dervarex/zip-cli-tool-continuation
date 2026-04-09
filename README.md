@@ -4,6 +4,7 @@ Community continuation of an unmaintained project
 A simple command-line tool for zipping and unzipping files and directories
 ## Installation
 You will need to add the tool to your PATH first:
+
 **Windows**
 ```powershell
 $env:Path += ";C:\path\to\zip-cli-tool"
