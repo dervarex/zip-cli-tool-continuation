@@ -1,4 +1,4 @@
-Community continuation of an unmaintained project
+Discontinued Community continuation of an unmaintained project
 
 # Zip CLI Tool Continuation
 A simple command-line tool for zipping and unzipping files and directories
@@ -66,5 +66,3 @@ See the LICENSE file for details
 - Arch Linux by [dervarex](https://github.com/dervarex)
 
 You can help me by testing it on other platforms and reporting any issues you find!
-
-My discord: [click here](https://discord.gg/cUBWnbPAng)
